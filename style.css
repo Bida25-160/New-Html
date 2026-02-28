@@ -1,0 +1,92 @@
+selector{
+    property: value
+}
+body{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+header{
+    background-color: #3b68a7;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0,
+0, 0.1);
+}
+main image {
+    max-width: 100%;
+    height: auto;
+display: round;
+    margin: 20px 0;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+p {
+    font-size: 1.1em;
+}
+a {
+    color: oklab(49.805% 0.00938 -0.13606);
+text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: #000000 solid 2px;
+    border-radius: 10px;
+}
+main a[href="mailto:"]
+{
+    color: #2f509e;
+    font-weight: bold;
+}
+.nav-link.rounded-pill.active {
+    background-color: #2f509e;
+    color: white;
+padding: 0.5em 1em;
+main .container .my-5 {
+    background-color: #ffffff;
+    border-radius: 12px
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border: 1px solid #502e2e;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
