@@ -19,7 +19,7 @@ header h1{
     margin: 0;
 }
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -31,7 +31,7 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0,
 0, 0.1);
 }
@@ -43,7 +43,7 @@ display: round;
 }
 footer {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -74,7 +74,7 @@ main a[href="mailto:"]
 }
 .nav-link.rounded-pill.active {
     background-color: #2f509e;
-    color: white;
+    color: rgb(255, 255, 255);
 padding: 0.5em 1em;
 main .container .my-5 {
     background-color: #ffffff;
@@ -84,7 +84,7 @@ main .container .my-5 {
     border: 1px solid #502e2e;
 }
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
