@@ -1,92 +1,186 @@
-selector{
-    property: value
-}
+
 body{
-    background-color: lightblue;
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
 }
+
 header{
-    background-color: #3b68a7;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
-    text-align: center;
+background:#bcbcbc;
+color:white;
+padding:20px;
+text-align:center;
 }
-header h1{
-    margin: 0;
+.navbar ul{
+list-style:none;
+margin: 0;
+padding: 0
+display:flex;
+justify-content:flex-start;
+gap: 20px;
 }
-nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
-nav a:hover {
-    text-decoration: underline;
+
+.hero{
+background:#000000;
+color:white;
+padding:80px;
+text-align:center;
 }
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgba(0, 0,
-0, 0.1);
+
+.phones{
+padding:40px;
+text-align:center;
 }
-main image {
-    max-width: 100%;
-    height: auto;
-display: round;
-    margin: 20px 0;
+
+.phone-box{
+background:white;
+padding:20px;
+margin:15px;
+display:inline-block;
+width:200px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
-footer {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+
+table{
+margin:40px auto;
+border-collapse:collapse;
+width:70%;
+background:white;
 }
-p {
-    font-size: 1.1em;
+
+th, td{
+padding:12px;
+border:1px solid #ccc;
+text-align:center;
 }
-a {
-    color: oklab(49.805% 0.00938 -0.13606);
-text-decoration: none;
+
+th{
+background:#d2d2d2;
+color:white;
 }
-a:hover {
-    text-decoration: underline;
+
+form{
+width:300px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
 }
-a:hover {
-    text-decoration: underline;
+
+input, textarea{
+width:100%;
+padding:8px;
 }
-img {
-    border: #000000 solid 2px;
-    border-radius: 10px;
+
+button{
+background:#93a1b1;
+color:white;
+border:none;
+padding:10px;
+width:100%;
 }
-main a[href="mailto:"]
-{
-    color: #2f509e;
-    font-weight: bold;
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+margin-top:40px;
 }
-.nav-link.rounded-pill.active {
-    background-color: #2f509e;
-    color: rgb(255, 255, 255);
-padding: 0.5em 1em;
-main .container .my-5 {
-    background-color: #ffffff;
-    border-radius: 12px
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    border: 1px solid #502e2e;
+
+/* Header container */
+header {
+  display: flex;
+  justify-content: space-between; /* logo left, nav right */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e6f0f1; /* optional */
+  border-bottom: 1px solid #acb9bb;
 }
-.card {
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin-bottom: 1rem;
+
+/* Logo styling */
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #007bff; /* highlight color */
+}
+.hero-video {
+  width: 750px;
+  height: 450px;
+  border-radius: 10px;   /* rounded corners */
+  float: center;           /* pushes video to the left */
+  margin-right: 20px;    /* spacing between video and text/box */
+}
+.info-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  float: right;          /* makes it float to the right of the video */
+  margin-left: 10px;     /* spacing from video */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.info-box h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+.info-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+#about {
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+
+#about h1, #about h2 {
+  color: #adabab;
+  margin-bottom: 10px;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about ul li {
+  margin: 8px 0;
+}
+
+.team {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team .member {
+  flex: 1 1 200px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }

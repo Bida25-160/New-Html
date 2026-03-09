@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Table</h2>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Order ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td>10-01-23</td>
+    <td>76476</td>
+    <td>iPhone X</td>
+    <td>$120</td>
+    <td> x1</td>
+    <td>$120</td>
+  </tr>
+  <tr>
+    <td>13-01-23</td>
+    <td>76535</td>
+    <td>iPhone 8</td>
+    <td>$110</td>
+    <td> x1</td>
+    <td>$110</td>
+  </tr>
+  <tr>
+    <td>13-01-23</td>
+    <td>83765</td>
+    <td>iPhone X</td>
+    <td>$190</td>
+    <td> x2</td>
+    <td>$380</td>
+  </tr>
+  <tr>
+    <td>16-01-23</td>
+    <td>54754</td>
+    <td>iPhone 11</td>
+    <td>$185</td>
+    <td> x2</td>
+    <td>$370</td>
+  </tr>
+  <tr>
+    <td>20-01-23</td>
+    <td>76465</td>
+    <td>iPhone 12</td>
+    <td>$199</td>
+    <td> x1</td>
+    <td>$199</td>
+  </tr>
+  <tr>
+    <td>21-01-23</td>
+    <td>95656</td>
+    <td>iPhone 13 Pro</td>
+    <td>$230</td>
+    <td> x2</td>
+    <td>$460</td>
+  </tr>
+  <tr>
+    <td>23-01-23</td>
+    <td>32354</td>
+    <td>Samsung A32</td>
+    <td>$196</td>
+    <td> x1</td>
+    <td>$196</td>
+  </tr>
+  <tr>
+    <td>23-01-23</td>
+    <td>12232</td>
+    <td>Huawei P40</td>
+    <td>$370</td>
+    <td> x1</td>
+    <td>$370</td>
+  </tr>
+  <tr>
+    <td>24-01-23</td>
+    <td>73245</td>
+    <td>iPhone 17</td>
+    <td>$899</td>
+    <td> x1</td>
+    <td>$899</td>
+  </tr>
+  <tr>
+    <td>31-01-23</td>
+    <td>67453</td>
+    <td>iPhone 17 Pro</td>
+    <td>$999</td>
+    <td> x3</td>
+    <td>$2997</td>
+  </tr>
+ 
+</table>
+
+</body>
+</html>
+
