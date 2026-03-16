@@ -126,9 +126,11 @@ header {
 .hero-video {
   width: 750px;
   height: 450px;
-  border-radius: 10px;   /* rounded corners */
+  border: 2px solid #bdbaba;
+  border-radius: 20px; // rounded corners for the video // optional  padding: 5px;
   float: center;           /* pushes video to the left */
-  margin-right: 20px;    /* spacing between video and text/box */
+  margin-right: 20px;
+  box-shadow: 20px 6px 6px rgba(0,0,0,0.1);   /* spacing between video and text/box */
 }
 .info-box {
   background-color: #f9f9f9;
@@ -184,3 +186,36 @@ header {
   border-radius: 8px;
   border: 1px solid #ddd;
 }
+
+.price {
+  color: red;
+}
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-to-cart:hover {
+  background-color: #218838;
+}
+.product-image {
+  width: 400px;
+  display: block;
+    margin: 20px auto;
+}
+.features {
+  list-style: square;
+    padding-left: 20px;
+    line-height: 1.6
+    }
+    .product-container {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      font-family: arial sans-serif;
+    }
