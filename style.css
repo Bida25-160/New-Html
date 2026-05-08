@@ -11,14 +11,13 @@ color:white;
 padding:20px;
 text-align:center;
 }
-.navbar ul{
-list-style:none;
-margin: 0;
-padding: 0
-display:flex;
-justify-content:flex-start;
-gap: 20px;
+
+.navbar {
+ display:flex;
+ flex-wrap: wrap;
+ gap: 15px;
 }
+
 nav a{
 color:white;
 margin:15px;
@@ -34,8 +33,15 @@ text-align:center;
 }
 
 .phones{
-padding:40px;
-text-align:center;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: auto;
+  padding: auto;
+  min-width: auto;
+  min-width: auto;
+  text-align:center;
 }
 
 .phone-box{
@@ -123,25 +129,30 @@ header {
 .navbar a:hover {
   color: #007bff; /* highlight color */
 }
+
 .hero-video {
-  width: 750px;
-  height: 450px;
+  width: 100%;
+  max-width: 750px;     /* caps it on large screens */
+  height: auto;         /* maintains aspect ratio */
   border: 2px solid #bdbaba;
-  border-radius: 20px; // rounded corners for the video // optional  padding: 5px;
-  float: center;           /* pushes video to the left */
-  margin-right: 20px;
-  box-shadow: 20px 6px 6px rgba(0,0,0,0.1);   /* spacing between video and text/box */
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;       /* centers it properly */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .info-box {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
-  width: 250px;
-  float: right;          /* makes it float to the right of the video */
-  margin-left: 10px;     /* spacing from video */
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;    /* replaces float */
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+
 
 .info-box h2 {
   margin-top: 0;
@@ -219,3 +230,27 @@ header {
       text-align: center;
       font-family: arial sans-serif;
     }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+    
+.best-sellers {
+  grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .best-sellers .product {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
