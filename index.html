@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrao@5.3.0/dist/css/bootsrap.min.css"
-rel="stylesheet">
-   <!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script><style>
+<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 body{
 }
 </style>
@@ -44,11 +40,35 @@ body{
     <p> The iphone 16e now comes with the latest A18 chip & a new 48MP camera</p>
     <p><i>From <b>P12999</b> or <b>P360/mo.</b></i></p>
 
- <img src="pic1.jpg" alt="Featured Phone" style="width: 600px; height: 250px;">
+ <img src="pic1.jpg" alt="Featured Phone" style="width: 100%; height: auto;">
  </div>
  </section>
 
 <!-- FEATURED PHONES -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Auto-Swapping Images</title>
+  <style>
+    .slideshow {
+      width: 100%;   /* adjust to your layout */
+      height: auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .slideshow img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slideshow img.active {
+      opacity: 1;
+    }
+  </style>
+</head>
 
 <section class="phones">
 
@@ -57,8 +77,8 @@ body{
   <title>Auto-Swapping Images</title>
   <style>
     .slideshow {
-      width: 1350px;   /* adjust to your layout */
-      height: 450px;
+      width: 100%;   /* adjust to your layout */
+      height: auto;
       overflow: hidden;
       position: relative;
     }
@@ -76,6 +96,7 @@ body{
   </style>
 </head>
 <body>
+  <div class="slideshow-wrapper">
   <div class="slideshow">
     <img src="pic2.jpg" class="active" alt="First">
     <img src="pic3.jpg" alt="Second">
